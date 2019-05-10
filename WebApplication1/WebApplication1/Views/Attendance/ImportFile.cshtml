@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "ImportFile";
+}
+
+<h2>ImportFile</h2>
+@using (Html.BeginForm("ImportFile", "Attendance", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="OK" />
+}
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
